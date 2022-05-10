@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="znd/znd.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+ 
+</head>
+<body>
+
+  <div id="#transition_layer" class="transition">
+    <div class="transition_container">
+        <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+        <circle fill="#fff" stroke="none" cx="16" cy="50" r="10">
+          <animate
+            attributeName="opacity"
+            dur="1s"
+            values="0;1;0"
+            repeatCount="indefinite"
+            begin="0.1"/>    
+        </circle>
+        <circle fill="#fff" stroke="none" cx="46" cy="50" r="10">
+          <animate
+            attributeName="opacity"
+            dur="1s"
+            values="0;1;0"
+            repeatCount="indefinite" 
+            begin="0.2"/>       
+        </circle>
+        <circle fill="#fff" stroke="none" cx="76" cy="50" r="10">
+          <animate
+            attributeName="opacity"
+            dur="1s"
+            values="0;1;0"
+            repeatCount="indefinite" 
+            begin="0.3"/>     
+        </circle>
+      </svg>
+    </div> 
+  </div>
+    <section class="fs">
+        <h1 class="title txt_cntr">even columns</h1>
+        <div class="cols wrap">
+          <div class="col"><a href="#">aaa</a></div>
+          <div class="col"><a href="#">bbb</a></div>
+          <div class="col"><a href="#">ccc</a></div>
+          <div class="col"><a href="#" data-modal="alert">ddd</a></div>
+          <div class="col"><a href="#" data-modal="infos">ddd</a></div>
+        </div>
+      </section>
+
+      <div class="modal fs" id="modal_window">
+        <div class="modal_window">
+          
+          <div class="cols title_bar">
+             <h3 class="">titulo modal</h3><i class='txt_rt bx bxs-x-circle bx-md bx-flashing-hover' id="close_modal" ></i>
+          </div>
+          
+          <div id="modal"></div>
+        </div>
+      </div>
+
+    </body>
+
+  <script src="znd/znd.js"></script>
+  </html>

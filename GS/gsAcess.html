@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="znd/znd.css">
+</head>
+<body>
+   
+    <section class="fs">
+        <h1 class="title">Modal</h1>
+       
+        <div class="cols wrap">
+        </div>
+
+        <div id="formSendOk" class="off">
+          formulario enviado com sucesso!!
+        </div>
+        <form class="uk-grid-small " uk-grid id="gform">
+            <div>
+              <input class="uk-input  uk-form-width-medium forms" type="text" placeholder="titulo" name="titulo" id="titulo">
+            </div>
+            <div>
+              <input class="uk-input  uk-form-width-medium forms" type="text" placeholder="descricao" name="descricao" id="descricao">
+            </div>
+            <div>  
+            <button class="uk-button uk-form-width-medium uk-button-default ">Submit</button>
+          </div>
+        </form>
+      </section>
+
+      <template id="alert">esse é o alerta</template>
+      <template id="infos">mais informações sobre o site</template>
+
+
+ 
+</body>
+<script src="znd/znd.js"></script>
+<script>
+    var templates =  _elements("template #alert");
+    //trace( _element("#alert").innerHTML)
+</script>
+</html>
