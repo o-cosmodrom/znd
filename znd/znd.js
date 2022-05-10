@@ -253,12 +253,11 @@ function loadPage(url, element, callBack)
         }
     }
 
-    // var data = new FormData();
-    // data.append("nome", "adnam")
-    // data.append("valor", "teste")
+    var data = new FormData();
+    data.append("nome", "adnam")
+    data.append("valor", "teste")
     xhr.open('GET', url + "?act=all");
    
-    //xhr.open("GET", url)
     xhr.send("");
     xhr.onloadend = callBack;
 }
